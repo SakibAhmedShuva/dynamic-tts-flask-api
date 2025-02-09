@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "ba996285-15d9-474a-9f43-189a393ae5db",
+		"name": "postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34252114"
+	},
+	"item": [
+		{
+			"name": "tts/convert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Your text to convert to speech\",\r\n    \"voice\": \"female_1\",  // optional, defaults to \"female_1\"\r\n    \"language\": \"en-US\"   // optional, defaults to \"en-US\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/convert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"convert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tts/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"Modern house with pool\",\r\n    \"latitude\": 29.9511,\r\n    \"longitude\": -95.3378,\r\n    \"k\": 5,\r\n    \"radius_km\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/status/task_20250207_201949",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"status",
+						"task_20250207_201949"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tts/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"Modern house with pool\",\r\n    \"latitude\": 29.9511,\r\n    \"longitude\": -95.3378,\r\n    \"k\": 5,\r\n    \"radius_km\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tts/voices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"Modern house with pool\",\r\n    \"latitude\": 29.9511,\r\n    \"longitude\": -95.3378,\r\n    \"k\": 5,\r\n    \"radius_km\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/voices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"voices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tts/stream",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Your text to convert to speech\",\r\n    \"voice\": \"female_1\",  // optional\r\n    \"language\": \"en-US\"   // optional\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/stream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"stream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tts/download",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tts/download/task_20250207_202636",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tts",
+						"download",
+						"task_20250207_202636"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"Modern house with pool\",\r\n    \"latitude\": 29.9511,\r\n    \"longitude\": -95.3378,\r\n    \"k\": 5,\r\n    \"radius_km\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
